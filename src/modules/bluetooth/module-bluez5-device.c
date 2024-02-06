@@ -2129,6 +2129,7 @@ static pa_card_profile *create_card_profile(struct userdata *u, pa_bluetooth_pro
         cp->n_sources = 1;
         cp->max_sink_channels = 1;
         cp->max_source_channels = 1;
+      printf("entered card setting func foe hfp\n");
         pa_hashmap_put(input_port->profiles, cp->name, cp);
         pa_hashmap_put(output_port->profiles, cp->name, cp);
 
